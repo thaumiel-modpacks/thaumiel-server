@@ -171,8 +171,9 @@ Project Link: [https://github.com/thaumiel-modpacks/thaumiel-server](https://git
 
 ## Acknowledgments
 
-- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for the README template.
+- [itzg](https://github.com/itzg)'s work for making minecraft server automation easy and available for the masses.
 - [Packwiz](https://packwiz.infra.link/) for the modpack manager upon which this project is based.
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template) for the README template.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
