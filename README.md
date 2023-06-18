@@ -46,18 +46,21 @@
 <details>
   <summary>Table of Contents</summary>
 
-  <!--toc:start-->
-
+<!--toc:start-->
 - [About The Project](#about-the-project)
-  - [Mod Authors](#mod-authors)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+- [Usage](#usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgments](#acknowledgments)
-    <!--toc:end-->
+<!--toc:end-->
+
+
   </details>
 
 <!-- ABOUT THE PROJECT -->
