@@ -195,7 +195,7 @@ Project Link: [https://github.com/thaumiel-modpacks/thaumiel-server](https://git
 [Docker]: https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker
 [itzg/docker-minecraft-server-url]: https://docker-minecraft-server.readthedocs.io/en/latest/
 [itzg/docker-minecraft-server]: https://img.shields.io/badge/itzg/docker--minecraft--server-000000?style=for-the-badge&logo=github
-[itzg/mc-router-url]: https://docker-minecraft-server.readthedocs.io/en/latest/
+[itzg/mc-router-url]: https://github.com/itzg/mc-router
 [itzg/mc-router]: https://img.shields.io/badge/itzg/mc--router-000000?style=for-the-badge&logo=github
 [itzg/docker-mc-backup-url]: https://github.com/itzg/docker-mc-backup
 [itzg/docker-mc-backup]: https://img.shields.io/badge/itzg/docker--mc--backup-000000?style=for-the-badge&logo=github
