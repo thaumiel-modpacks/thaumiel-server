@@ -83,7 +83,7 @@ This repository houses everything you need to stand up a Thaumiel modpack minecr
 
 ## Getting Started
 
-This project is not designed to be run without any configuration. Please make sure you've red through the entirety of `docker-compose.yml` and referenced it against the [image documentation](https://docker-minecraft-server.readthedocs.io/en/latest/) before trying to begin.
+This project is not designed to be run without any manual configuration. Please make sure you've read through the entirety of `docker-compose.yml` and referenced it against the [image documentation](https://docker-minecraft-server.readthedocs.io/en/latest/) before trying to begin.
 
 ### Prerequisites
 
