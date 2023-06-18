@@ -192,7 +192,7 @@ Project Link: [https://github.com/thaumiel-modpacks/thaumiel-server](https://git
 [Packwiz-url]: https://packwiz.infra.link/
 [Packwiz]: https://img.shields.io/badge/Packwiz-000000?style=for-the-badge&logo=github
 [Docker-url]: https://www.docker.com/
-[Docker]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker
+[Docker]: https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker
 [itzg/docker-minecraft-server-url]: https://docker-minecraft-server.readthedocs.io/en/latest/
 [itzg/docker-minecraft-server]: https://img.shields.io/badge/itzg/docker--minecraft--server-000000?style=for-the-badge&logo=github
 [itzg/mc-router-url]: https://docker-minecraft-server.readthedocs.io/en/latest/
