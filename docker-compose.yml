@@ -1,0 +1,77 @@
+---
+version: "3.2"
+services:
+  t23:
+    container_name: t23
+    image: itzg/minecraft-server:java17
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./t23-data:/data
+      - ./ops.json:/data/ops.json
+      - ./vt-resourcepacks.json:/data/vt-resourcepacks.json
+      - ./whitelist.json:/data/whitelist.json
+    restart: unless-stopped
+    environment:
+      EULA: "TRUE"
+      VERSION: 1.19.2
+      TYPE: FORGE
+      FORGEVERSION: 43.2.14
+      PACKWIZ_URL: https://raw.githubusercontent.com/thaumiel-modpacks/thaumiel23/main/pack.toml
+      INIT_MEMORY: 1G
+      MAX_MEMORY: 8G
+      TZ: America/New_York
+      USE_AIKAR_FLAGS: "true"
+      ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: 10800
+      AUTOPAUSE_TIMEOUT_INIT: 10800
+      STOP_SERVER_ANNOUNCE_DELAY: 5
+      TUNE_VIRTUALIZED: "true"
+      ENABLE_ROLLING_LOGS: "true"
+      RCON_CMDS_STARTUP: |-
+        /pregen start gen radius initialGen 0 0 250 minecraft:overworld FAST_CHECK_GEN
+      RCON_CMDS_FIRST_CONNECT: |-
+        /pregen stop
+      RCON_CMDS_LAST_DISCONNECT: |-
+        /pregen continue initialGen
+      RCON_CMDS_ON_CONNECT: |-
+        /team join Players @a[team=]
+      VANILLATWEAKS_FILE: ./vt-resourcepacks.json
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      MOTD: Welcome to the default Thaumiel23 server!
+      DIFFICULTY: normal
+      WHITELIST_FILE: ./whitelist.json
+      ENABLE_WHITELIST: "true"
+      ENFORCE_WHITELIST: "true"
+      OPS_FILE: ./ops.json
+      # give your server a fun icon, can be path or url
+      ICON: https://www.minecraft.net/content/dam/games/minecraft/logos/MCVB_App_Icon_Flat_18x18.png
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: ${RCON_PASSWORD}
+      ENABLE_COMMAND_BLOCK: "true"
+      FORCE_GAMEMODE: "false"
+      SNOOPER_ENABLED: "false"
+      MAX_TICK_TIME: -1
+      SEED: 72415961571256213 # A fun valley start
+      ALLOW_FLIGHT: "true"
+      SERVER_NAME: Thaumiel 23 Default # Give your server a fun name
+  t23-backups:
+    container_name: t23-backup
+    image: itzg/mc-backup
+    volumes: [./t23-data:/data:ro, ./t23-backups:/backups]
+    network_mode: service:t23
+    restart: unless-stopped
+    environment:
+      INITIAL_DELAY: 30m
+      BACKUP_INTERVAL: 4h
+      PAUSE_IF_NO_PLAYERS: true
+      TZ: America/New_York
+      BACKUP_METHOD: tar
+      TAR_COMPRESS_METHOD: zstd
+      RCON_HOST: t23
+      RCON_PASSWORD: ${RCON_PASSWORD}
+  router:
+    image: itzg/mc-router
+    ports: [25565:25565]
+    command: ${ROUTER_COMMAND}
+    restart: unless-stopped

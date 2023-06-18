@@ -1,0 +1,78 @@
+{
+  "type": "resourcepacks",
+  "version": "1.19",
+  "packs": {
+    "Aesthetic": ["AnimatedCampfireItem"],
+    "Terrain": ["TwinklingStars", "BushyLeaves"],
+    "Variation": [
+      "VariatedTerracotta",
+      "VariatedStone",
+      "VariatedMycelium",
+      "VariatedCobblestone",
+      "VariatedEndStone",
+      "VariatedMushroomBlocks",
+      "RandomMossRotation",
+      "VariatedGrass",
+      "RandomCoarseDirtRotation"
+    ],
+    "Utility": [
+      "VisualHoney",
+      "BetterObservers",
+      "HungerPreview",
+      "StickyPistonSides",
+      "DirectionalHoppers",
+      "DirectionalDispensersDroppers"
+    ],
+    "Unobtrusive": [
+      "TransparentPumpkin",
+      "UnobtrusiveScaffolding",
+      "LowerFire"
+    ],
+    "3d": [
+      "3DSunMoon",
+      "3DStonecutters",
+      "3DGlowLichen",
+      "3DVines",
+      "3DMushrooms",
+      "3DTrapdoors",
+      "3DDoors",
+      "3DLilyPads",
+      "3DIronBars",
+      "3DSugarcane",
+      "3DRails",
+      "3DLadders",
+      "3DRedstoneWire",
+      "3DAmethyst",
+      "3DPointedDripstone",
+      "3DChains",
+      "3DBookshelves"
+    ],
+    "Hud": [
+      "PingColorIndicator",
+      "RainbowExperience",
+      "MoreCrosshairs-SmallCross"
+    ],
+    "Fixes": [
+      "CatFix",
+      "HopperBottomFix",
+      "HoeFix",
+      "ItemHoldFix",
+      "IronBarsFix",
+      "NoBowlParticles",
+      "ProperBreakParticles",
+      "NicerFastLeaves",
+      "SlimeParticleFix",
+      "BlazeFix",
+      "SoulSoilSoulCampfire",
+      "CactusBottomFix",
+      "ConsistentTadpoleBucket",
+      "ConsistentBucketFix",
+      "JappaObserver",
+      "JappaRecipeButton",
+      "ConsistentUIFix",
+      "DripleafFixSmall",
+      "DripleafFixBig",
+      "ItemStitchingFix"
+    ]
+  }
+}
